@@ -1,0 +1,33 @@
+{
+  "name": "imagecompressor",
+  "version": "1.0.0",
+  "main": "compress.js",
+  "scripts": {
+    "start": "node compress.js && node convert.js",
+    "preinstall": "npx npm-force-resolutions",
+    "compress": "node compress.js",
+    "convert": "node convert.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:jursolutions/image-compressor.git"
+  },
+  "devDependencies": {
+    "fs": "^0.0.1-security",
+    "imagemin": "^8.0.1",
+    "imagemin-gifsicle": "7.0.0",
+    "imagemin-jpeg-recompress": "7.0.0",
+    "imagemin-jpegtran": "7.0.0",
+    "imagemin-mozjpeg": "10.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "10.0.1",
+    "imagemin-webp": "7.0.0",
+    "path": "^0.12.7"
+  },
+  "engines": {
+    "node": "16.x.x"
+  },
+  "license": "UNLICENSED",
+  "type": "module"
+}
